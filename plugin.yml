@@ -1,0 +1,20 @@
+name: kubernetes-junit-annotate-buildkite
+description: Generate junit report and annotate the build
+author: https://github.com/rayanebel
+requirements:
+ - kubectl
+ - kustomize
+configuration:
+  properties:
+    name:
+      type: string
+    tests:
+      type: array
+      items:
+        type: object
+        properties:
+          titi:
+            type: string
+          tata:
+            type: string
+  additionalProperties: false

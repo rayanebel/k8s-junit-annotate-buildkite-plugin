@@ -1,0 +1,7 @@
+set -euo pipefail
+
+echo '--- :house_with_garden: Setting up the environment'
+
+env
+
+echo "--- finish"
